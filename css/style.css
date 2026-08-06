@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segue UI';
+    color: black;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #1e1e2f;
+}
+
+header img{
+    height: 100px;
+}
+
+/* NAV */
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-right: 50px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover{
+    color: #4dabf7;
+}
+
+/* HERO */
+.hero{
+    background-color: #4dabf7;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* O NAMA SEKCIJA*/
+
+.onama{
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.onama h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #1e1e2f;
+}
+
+
+.onama ul{
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.onama li{
+    margin-bottom: 5px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #1e1e2f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
