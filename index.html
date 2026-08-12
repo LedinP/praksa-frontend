@@ -1,45 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praksa Frontend</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <img src="slike/logo.png" alt="logo" width="150">
-        <nav>
-            <ul>
-                <li><a href="#pocetna">Početna</a></li>
-                <li><a href="#onama">O nama</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="pocetna" class="hero">
-        <h1>Stranica za praksu u IDK Studiju</h1>
-        <p>Frontend praksa - Dan 3 (CSS) </p>
-    </section>
 
-    <section class="onama">
-        <h2>O meni</h2>
-        <p>
-        Ja sam Eldin Ponjević, student sam Tehničkog fakulteta u Bihaću.
-        Kroz praksu učim osnove frontend-a.
-        </p>
-        <ul>
-            <li>Osnovnu HTML strukturu</li>
-            <li>CSS stilizaciju</li>
-            <li>Bootstrap</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#1e1e2f;">
+  <div class="container">
+    <a class="navbar-brand" href="#pocetna">
+      <img src="slike/logo.png" alt="IDK Studio logo" height="80">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#pocetna">Početna</a></li>
+        <li class="nav-item"><a class="nav-link" href="#onama">O nama</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <footer id="kontakt">
-        <p>2026 Eldin Ponjević | Praksa Frontend</p>
-    </footer>
+<section id="pocetna" class="hero">
+    <h1>Stranica za praksu u IDK Studiju</h1>
+    <p>Frontend praksa - Dan 4 (Bootstrap)</p>
+    <a href="#onama" class="btn-cta">Saznajte više</a>
+</section>
 
+<section id="onama" class="py-5">
+  <div class="container">
+    <h2 class="mb-4">O meni</h2>
+    <p>
+      Ja sam Eldin Ponjević, student sam Tehničkog fakulteta u Bihaću. Studiram elektrotehniku, odsjek računarstvo i informatika.
+      Za izradu ove stranice koristim:
+    </p>
+
+    <div class="row mt-4">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <i class="bi bi-code-slash card-icon"></i>
+            <h5 class="card-title">HTML</h5>
+            <p class="card-text">Osnovna struktura web stranica, semantički elementi.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <i class="bi bi-palette card-icon"></i>
+            <h5 class="card-title">CSS</h5>
+            <p class="card-text">Stilizacija, layout, responsive dizajn.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <i class="bi bi-lightning-charge card-icon"></i>
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">Interaktivnost i logika na stranici.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+    <div class="social-icons">
+        <a href="https://github.com/LedinP" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-envelope"></i></a>
+    </div>
+    <p>&copy; 2026 Eldin Ponjević | Praksa Frontend</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
