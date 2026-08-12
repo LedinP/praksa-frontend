@@ -44,6 +44,66 @@ nav a:hover {
     color: var(--primary);
 }
 
+/* Dark/Light mode button */
+
+#buttonTheme {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-left: 10px;
+}
+
+#buttonTheme:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+body.dark-mode {
+    background-color: #2a2a3d;
+    color: #f1f1f1;
+}
+
+body.dark-mode #onama,
+body.dark-mode #jsPrimjer {
+    background-color: #2a2a3d;
+    color: #f1f1f1;
+}
+
+body.dark-mode #onama h2,
+body.dark-mode #jsPrimjer h3,
+body.dark-mode #demo {
+    color: #f1f1f1;
+}
+
+body.dark-mode .card {
+    background-color: #2a2a3d;
+    color: #f1f1f1;
+}
+
+body.dark-mode .card-text {
+    color: #ccc;
+}
+
+body.dark-mode #brojac {
+    background-color: #2a2a3d;
+    color: #f1f1f1;
+}
+
+body.dark-mode #brojac h3,
+body.dark-mode #brojKlikova {
+    color: #f1f1f1;
+}
+
+body.dark-mode #dugmeReset {
+    color: #f1f1f1;
+    border-color: #f1f1f1;
+}
+
 /* HERO */
 .hero {
     background: linear-gradient(135deg, var(--primary), var(--dark));
@@ -126,6 +186,104 @@ nav a:hover {
     font-size: 2rem;
     color: var(--primary);
     margin-bottom: 10px;
+}
+
+/* JavaScript Primjer */
+#jsPrimjer {
+    background-color: #fff;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#jsPrimjer h3 {
+    font-size: 28px;
+    color: var(--dark);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#jsPrimjer p {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+#jsPrimjer button {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+#jsPrimjer button:hover {
+    background-color: var(--dark);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+#demo {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark);
+    transition: color 0.3s ease;
+}
+
+/* BROJAC SEKCIJA */
+#brojac {
+    background-color: #fff;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#brojac h3 {
+    font-size: 28px;
+    color: var(--dark);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#brojac button {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    margin: 0 6px;
+}
+
+#brojac button:hover {
+    background-color: var(--dark);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+#dugmeReset {
+    background-color: transparent;
+    color: var(--dark);
+    border: 2px solid var(--dark);
+}
+
+#dugmeReset:hover {
+    background-color: var(--dark);
+    color: #fff;
+}
+
+#brojKlikova {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark);
 }
 
 /* FOOTER */
